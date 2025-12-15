@@ -1,0 +1,19 @@
+name: Run Now Then Schedule
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "*/1 * * * *"
+  workflow_dispatch:
+
+jobs:
+  run-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run task
+        run: |
+          echo "Workflow running"
+          date
