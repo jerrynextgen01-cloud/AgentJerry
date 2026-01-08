@@ -34,7 +34,7 @@ KEYWORDS = [
 ]
 
 keyword = random.choice(KEYWORDS)
-MAX_RESULTS = 20
+MAX_RESULTS = 5
 OUTPUT_FILE = "leads.xlsx"
 
 # ==============================
